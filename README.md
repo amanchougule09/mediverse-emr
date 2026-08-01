@@ -1,26 +1,82 @@
-# Mediverse EMR
+# MediVerse EMR
 
-A full-stack Electronic Medical Records (EMR) system for clinic management, featuring role-based access control, patient records, appointments, prescriptions, consultations, billing, laboratory, pharmacy, notifications, and audit logging.
+MediVerse EMR is a full-stack **Enterprise Clinic Management and Electronic Medical Record (EMR) System** designed to streamline clinical workflows. It enables secure management of patients, appointments, consultations, prescriptions, laboratory services, pharmacy operations, billing, and role-based access through a modern React frontend and a Spring Boot backend.
 
-## Screenshots
+## Table of Contents
 
-| Screenshot | Description |
-| ---------- | ----------- |
-| ![Registration](screenshots/register.png) | New user registration |
-| ![Login](screenshots/login.png) | Login page |
-| ![Roles & Permissions](screenshots/roles.png) | Admin: assign roles & permissions |
-| ![User Management](screenshots/users.png) | Admin: manage users |
-| ![Dashboard](screenshots/dashboard.png) | Dashboard with analytics |
-| ![Patient Management](screenshots/patients.png) | Feature example: patient records |
+- [Features](#features)
+- [Architecture](#architecture)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [API Documentation](#api-documentation)
+- [Future Enhancements](#future-enhancements)
+- [Author](#author)
+- [License](#license)
+
+## Features
+
+### Authentication & Security
+- JWT-based authentication (login, registration, password reset)
+- Role-based access control (RBAC) with granular permission management
+- BCrypt password hashing
+
+### Patient Management
+- Patient registration and records
+- Medical history tracking
+- File & document uploads
+
+### Appointments
+- Appointment scheduling
+- Doctor assignment and status tracking
+
+### Clinical
+- Consultations with detailed notes
+- Prescriptions with medication, dosage, and instructions
+
+### Diagnostics
+- Laboratory test requests and results
+
+### Pharmacy
+- Medicine inventory management
+- Prescription dispensing
+
+### Billing
+- Invoice generation
+- Payment tracking
+
+### Dashboard & Analytics
+- Role-aware dashboard with real-time analytics charts
+
+### Administration
+- User management
+- Role and permission allocation
+
+## Architecture
+
+```
+React (Vite) + Tailwind CSS
+            │
+            ▼
+      REST APIs (JWT)
+            │
+            ▼
+      Spring Boot 4
+            │
+            ▼
+   MySQL + Flyway
+```
 
 ## Tech Stack
 
 | Layer | Technology |
 | ----- | ---------- |
+| Frontend | React 19, Vite 8, Tailwind CSS 4, React Router, Recharts |
 | Backend | Java 21, Spring Boot 4.1, Spring Security, Spring Data JPA |
 | Database | MySQL, Flyway migrations |
-| Auth | JWT (JSON Web Tokens) |
-| Frontend | React 19, Vite 8, Tailwind CSS 4, React Router, Recharts |
+| Auth | JWT (JSON Web Tokens), BCrypt |
+| API Docs | Swagger UI (springdoc-openapi) |
 | Build | Maven (backend), npm (frontend) |
 
 ## Project Structure
@@ -31,32 +87,43 @@ mediverse-emr/
 │   └── src/main/
 │       ├── java/com/amanchougule/clinic_emr/   # Controllers, services, entities, security
 │       └── resources/db/migration/             # Flyway SQL migrations
-└── clinic-emr-frontend/   # React SPA
-    └── src/
-        ├── api/           # Axios API clients
-        ├── auth/          # Login, register, password reset
-        ├── components/    # Reusable UI components
-        ├── pages/         # Feature pages (patients, appointments, billing, etc.)
-        └── routes/        # Application routing
+├── clinic-emr-frontend/   # React SPA
+│   └── src/
+│       ├── api/           # Axios API clients
+│       ├── auth/          # Login, register, password reset
+│       ├── components/    # Reusable UI components
+│       ├── pages/         # Feature pages (patients, appointments, billing, etc.)
+│       └── routes/        # Application routing
+└── screenshots/           # App screenshots
 ```
 
-## Features
+## Screenshots
 
-- Authentication & registration with JWT
-- Role-based access control with granular permissions
-- Patient management
-- Doctor management & appointments
-- Prescriptions & consultations
-- Billing, laboratory, and pharmacy modules
-- Patient file/document uploads
-- Notifications & audit log
-- Dashboard with analytics charts
+| Screenshot | Description |
+| ---------- | ----------- |
+| ![Login](screenshots/login.png) | Login page |
+| ![Dashboard](screenshots/dashboard.png) | Dashboard with analytics |
+| ![Patients](screenshots/patients.png) | Patient management |
+| ![Doctors](screenshots/doctors.png) | Doctor management |
+| ![Appointments](screenshots/appointments.png) | Appointment scheduling |
+| ![Consultation](screenshots/consultation.png) | Clinical consultations |
+| ![Prescription](screenshots/prescription.png) | Prescription management |
+| ![Laboratory](screenshots/laboratory.png) | Laboratory tests |
+| ![Pharmacy](screenshots/pharmacy.png) | Pharmacy operations |
+| ![Billing](screenshots/billing.png) | Billing & payments |
+| ![User Management](screenshots/users.png) | Admin user management |
 
-## Backend Setup
+## Getting Started
 
-**Prerequisites:** JDK 21, Maven, MySQL 8+
+### Prerequisites
 
-1. Create the database (Flyway will create tables automatically):
+- JDK 21, Maven 3.x
+- MySQL 8+
+- Node.js 18+, npm
+
+### Backend Setup
+
+1. Create the database (Flyway will create the tables automatically):
    ```sql
    CREATE DATABASE IF NOT EXISTS clinic_emr_db;
    ```
@@ -78,9 +145,7 @@ mediverse-emr/
 
 > **Note:** `DB_PASSWORD` and `JWT_SECRET` are required — the app will not start without them. On Windows PowerShell, set them with `$env:DB_PASSWORD = "..."` before running.
 
-## Frontend Setup
-
-**Prerequisites:** Node.js 18+
+### Frontend Setup
 
 1. Install dependencies:
    ```bash
@@ -102,3 +167,31 @@ mediverse-emr/
    ```bash
    npm run build
    ```
+
+## API Documentation
+
+Interactive API documentation is available via Swagger UI once the backend is running:
+
+- **Swagger UI:** http://localhost:8080/swagger-ui/index.html
+- **OpenAPI spec:** http://localhost:8080/v3/api-docs
+
+## Future Enhancements
+
+- Email notifications
+- OTP-based authentication
+- SMS integration
+- Doctor queue management
+- Triage & vitals tracking
+- Docker deployment
+- CI/CD pipeline
+
+## Author
+
+**Aman Chougule**
+
+- GitHub: [amanchougule09](https://github.com/amanchougule09)
+- LinkedIn: [Add your LinkedIn URL]
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.

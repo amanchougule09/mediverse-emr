@@ -1,7 +1,12 @@
 Put your screenshot images here:
-- register.png   -> Registration page
-- login.png      -> Login page
-- roles.png      -> Admin: roles & permissions
-- users.png      -> Admin: user management
-- dashboard.png  -> Dashboard with analytics
-- patients.png   -> Feature page (e.g. patient records)
+- login.png       -> Login page
+- dashboard.png   -> Dashboard with analytics
+- patients.png    -> Patient management
+- doctors.png     -> Doctor management
+- appointments.png-> Appointment scheduling
+- consultation.png-> Clinical consultations
+- prescription.png-> Prescription management
+- laboratory.png  -> Laboratory tests
+- pharmacy.png    -> Pharmacy operations
+- billing.png     -> Billing & payments
+- users.png       -> Admin user management
