@@ -1,1 +1,7 @@
-Put your screenshot images here (login.png, dashboard.png, patients.png, appointments.png, billing.png, prescriptions.png).
+Put your screenshot images here:
+- register.png   -> Registration page
+- login.png      -> Login page
+- roles.png      -> Admin: roles & permissions
+- users.png      -> Admin: user management
+- dashboard.png  -> Dashboard with analytics
+- patients.png   -> Feature page (e.g. patient records)

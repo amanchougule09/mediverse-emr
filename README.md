@@ -6,12 +6,12 @@ A full-stack Electronic Medical Records (EMR) system for clinic management, feat
 
 | Screenshot | Description |
 | ---------- | ----------- |
+| ![Registration](screenshots/register.png) | New user registration |
 | ![Login](screenshots/login.png) | Login page |
-| ![Dashboard](screenshots/dashboard.png) | Dashboard with analytics charts |
-| ![Patients](screenshots/patients.png) | Patient management |
-| ![Appointments](screenshots/appointments.png) | Appointment scheduling |
-| ![Billing](screenshots/billing.png) | Billing & payments |
-| ![Prescriptions](screenshots/prescriptions.png) | Prescription management |
+| ![Roles & Permissions](screenshots/roles.png) | Admin: assign roles & permissions |
+| ![User Management](screenshots/users.png) | Admin: manage users |
+| ![Dashboard](screenshots/dashboard.png) | Dashboard with analytics |
+| ![Patient Management](screenshots/patients.png) | Feature example: patient records |
 
 ## Tech Stack
 
