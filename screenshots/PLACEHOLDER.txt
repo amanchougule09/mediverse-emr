@@ -1,0 +1,1 @@
+Put your screenshot images here (login.png, dashboard.png, patients.png, appointments.png, billing.png, prescriptions.png).

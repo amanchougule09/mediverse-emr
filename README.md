@@ -2,6 +2,17 @@
 
 A full-stack Electronic Medical Records (EMR) system for clinic management, featuring role-based access control, patient records, appointments, prescriptions, consultations, billing, laboratory, pharmacy, notifications, and audit logging.
 
+## Screenshots
+
+| Screenshot | Description |
+| ---------- | ----------- |
+| ![Login](screenshots/login.png) | Login page |
+| ![Dashboard](screenshots/dashboard.png) | Dashboard with analytics charts |
+| ![Patients](screenshots/patients.png) | Patient management |
+| ![Appointments](screenshots/appointments.png) | Appointment scheduling |
+| ![Billing](screenshots/billing.png) | Billing & payments |
+| ![Prescriptions](screenshots/prescriptions.png) | Prescription management |
+
 ## Tech Stack
 
 | Layer | Technology |
