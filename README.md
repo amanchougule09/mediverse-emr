@@ -101,7 +101,11 @@ mediverse-emr/
 
 | Screenshot | Description |
 | ---------- | ----------- |
+| ![Role Management](screenshots/role.png) | Role Management 
 | ![Login](screenshots/login.png) | Login page |
+| ![Register](screenshots/register.png) | Register page |
+| ![User Management](screenshots/users.png) | Admin user management |
+| ![Role Management](screenshots/role.png) | Role Management management |
 | ![Dashboard](screenshots/dashboard.png) | Dashboard with analytics |
 | ![Patients](screenshots/patients.png) | Patient management |
 | ![Doctors](screenshots/doctors.png) | Doctor management |
