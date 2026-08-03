@@ -101,7 +101,6 @@ mediverse-emr/
 
 | Screenshot | Description |
 | ---------- | ----------- |
-| ![Role Management](screenshots/role.png) | Role Management 
 | ![Login](screenshots/login.png) | Login page |
 | ![Register](screenshots/register.png) | Register page |
 | ![User Management](screenshots/users.png) | Admin user management |
@@ -115,7 +114,6 @@ mediverse-emr/
 | ![Laboratory](screenshots/laboratory.png) | Laboratory tests |
 | ![Pharmacy](screenshots/pharmacy.png) | Pharmacy operations |
 | ![Billing](screenshots/billing.png) | Billing & payments |
-| ![User Management](screenshots/users.png) | Admin user management |
 
 ## Getting Started
 
